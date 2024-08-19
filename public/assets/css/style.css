@@ -2260,6 +2260,16 @@ section.parallax p.info {
 	color:#999;
 }
 
+.blog-post h1,
+.blog-post h2,
+.blog-post h3,
+.blog-post h4,
+.blog-post h5,
+.blog-post h6
+{
+	color:#3e9f74;
+}
+
 .blog-post header .info span::after {
 	content:'•';
 	display:inline-block;

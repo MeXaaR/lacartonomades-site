@@ -1,3 +1,5 @@
+"use client"
+
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -28,7 +30,7 @@ export default class Footer extends Component {
 										<img style={{ width: 200 }} src="/images/logo_one_two_lines_white.svg" alt="Lacartonomades" data-rjs="2" />
 									</p>
 									<p>
-										Merci dêtre ici, et du'tiliser l'applicaiton. ca nous touche beaucoup de voir que notre travail est utile.
+										Merci dêtre ici, et d'utiliser l'application. Ça nous touche beaucoup de voir que notre travail est utile.
 									</p>
 								</div>
 							</Col>
@@ -43,9 +45,10 @@ export default class Footer extends Component {
 									<h6>Liens Utiles</h6>
 
 									<ul className="footer-menu">
-										<li><a href="/">Home</a></li>
+										<li><a href="/">Accueil</a></li>
+										<li><a href="/support-us">Nous remercier</a></li>
 										<li><a href="/mentions">Mentions Légales</a></li>
-										<li><a href="/rgpd">RGPD</a></li>
+										<li><a href="/privacy">RGPD</a></li>
 									</ul>
 
 								</div>
@@ -58,8 +61,8 @@ export default class Footer extends Component {
 									<h6>Télécharger</h6>
 
 									<div className="button-store">
-										<a href="#" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 mb-sm-3"><i className="fab fa-google-play"></i><p>Disponible sur<span>Google Play</span></p></a>
-										<a href="#" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0"><i className="fab fa-apple"></i><p>Et aussi sur<span>App Store</span></p></a>
+										<a href={process.env.PLAYSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 mb-sm-3"><i className="fab fa-google-play"></i><p>Disponible sur<span>Google Play</span></p></a>
+										<a href={process.env.APPSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0"><i className="fab fa-apple"></i><p>Et aussi sur<span>App Store</span></p></a>
 									</div>
 
 								</div>

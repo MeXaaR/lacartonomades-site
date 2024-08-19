@@ -1,8 +1,9 @@
+'use client'
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackgroundSlider from 'react-background-slider';
 
-const SingleImage = () => {
+const SingleImage = ({ data = {} }) => {
 	return (
 		<section id="home" className="banner image-bg">
 
@@ -23,27 +24,25 @@ const SingleImage = () => {
 						{/* <!-- Banner text --> */}
 						<div className="banner-text">
 
-							<h1 className="wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0s">
-								La nouvelle carte<br />Pour les Nomades
+							<h1 className="wow fadeInUp" style={{
+								whiteSpace: 'pre-line'
+							}} data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0s">
+								{data.attributes?.title}
 							</h1>
 
-							<p className="wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.3s">
-								La Carto'Nomades est une application dédiée aux Nomades en tout genres,
-								100% gratuite et sans publicité. Elle te permet de trouver des lieux
-								et services adaptés à tes besoins. Complètement offline, elle t'accompagne partout, même sans connexion internet.
-							</p>
-							<p className="wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.3s">
-								Elle n'est pas référencée sur les stores d'applications, mais tu peux
-								la télécharger directement depuis ce site. La seule façon de la trouver, c'est ici, sur ces deux boutons.
+							<p className="wow fadeInUp" style={{
+								whiteSpace: 'pre-line'
+							}} data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.3s">
+								{data.attributes?.introduction}
 							</p>
 
 							<div className="button-store wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
 
-								<a href="#" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
+								<a href={process.env.PLAYSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
 									<i className="fab fa-google-play"></i><p>Disponible sur<span>Google Play</span></p>
 								</a>
 
-								<a href="#" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0">
+								<a href={process.env.APPSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0">
 									<i className="fab fa-apple"></i><p>Et aussi sur<span>App Store</span></p>
 								</a>
 

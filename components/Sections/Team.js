@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-const Team = () => {
+const Team = ({ data = {} }) => {
 	return (
 		<section id="team">
 
@@ -26,12 +26,12 @@ const Team = () => {
 					<Col className="col-12 col-md-6 col-lg-3">
 						<div className="team-member res-margin">
 							<div className="team-image">
-								<img src="/images/team/marie.jpeg" alt="" />
+								<img src={data?.attributes?.marie_photo?.data?.attributes?.url} alt="" />
 
 							</div>
 							<div className="team-details">
 								<h5 className="title"><a href="/worker">Marie-Aure</a></h5>
-								<span className="position">Graphiste, Guide et Nomade</span>
+								<span className="position">{data?.attributes?.marie_description}</span>
 							</div>
 						</div>
 					</Col>
@@ -40,11 +40,11 @@ const Team = () => {
 					<Col className="col-12 col-md-6 col-lg-3">
 						<div className="team-member res-margin">
 							<div className="team-image">
-								<img src="/images/team/francois.jpeg" alt="" />
+								<img src={data?.attributes?.francois_photo?.data?.attributes?.url} alt="" />
 							</div>
 							<div className="team-details">
 								<h5 className="title"><a href="/worker">François</a></h5>
-								<span className="position">Web Dev et Dresseur de licorne</span>
+								<span className="position">{data?.attributes?.francois_description}</span>
 							</div>
 						</div>
 					</Col>

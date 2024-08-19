@@ -1,7 +1,7 @@
+"use client"
 import React, { useEffect, useRef, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import CountUp from 'react-countup';
-
 const Counters = () => {
     const parallax = useRef(null);
     const [places, setPlaces] = useState(0);

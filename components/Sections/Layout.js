@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-
 // Add dynamic CSS
 const addStyleSheet = (path) => {
 	if (typeof window === 'object') {
@@ -26,19 +25,22 @@ const Layout = (props) => {
 
 	return (
 		<div>
-			
+
 			<Head>
 
 				/* Meta */
 				<meta charSet="utf-8" />
 				<meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<meta name="robots" content="noindex,nofollow" />
+				<meta rel="stylesheet" content="/css/styles.css" />
+
 
 				/* Title */
 				<title>{props.pageTitle}</title>
 
 				/* Favicon */
-				<link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+				<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
 			</Head>
 

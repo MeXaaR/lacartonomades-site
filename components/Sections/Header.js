@@ -1,23 +1,18 @@
+"use client"
 import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
 
 const Header = (props) => {
     const [isMobileMenu, setIsMobileMenu] = useState(false);
-    const [isSearch, setIsSearch] = useState(false);
 
     const handleMobileMenu = e => {
         e.preventDefault();
         return setIsMobileMenu(!isMobileMenu);
     };
 
-    const handleSearch = e => {
-        e.preventDefault();
-        return setIsSearch(!isSearch);
-    };
-
     return (
-        <header id="top-page" className="header">
+        <header id="top-page" className="header" style={{ background: props.background }}>
             <div id="mainNav" className={isMobileMenu ? 'main-menu-area animated mobile-menu-open' : 'main-menu-area animated'}>
                 <Container>
                     <Row className="align-items-center">
