@@ -54,9 +54,7 @@ const Clients = (props) => {
 
                         {categories.map((category, index) => (
                             <SwiperSlide className="client" key={index}>
-                                <a href="#">
-                                    <img src={`/images/categories/${category}`} alt={`Category ${index + 1}`} />
-                                </a>
+                                <img src={`/images/categories/${category}`} alt={`Category ${index + 1}`} />
                             </SwiperSlide>
                         ))}
 

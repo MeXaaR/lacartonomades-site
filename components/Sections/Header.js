@@ -23,11 +23,11 @@ const Header = (props) => {
                             <div className="logo">
 
                                 <Link href="/" className="navbar-brand navbar-brand1">
-                                    <img style={{ maxWidth: 200 }} src="/images/logo_one_two_lines_white.svg" srcSet={`/images/logo_one_two_lines_white.svg 2x`} alt="La Carto'Nomades" />
+                                    <img style={{ maxWidth: 200 }} src="/images/logo_one_two_lines_white.svg" alt="La Carto'Nomades" />
                                 </Link>
 
                                 <Link href="/" className="navbar-brand navbar-brand2">
-                                    <img style={{ maxWidth: 200 }} src="/images/logo_one_two_lines.svg" srcSet={`/images/logo_one_two_lines.svg 2x`} alt="La Carto'Nomades" />
+                                    <img style={{ maxWidth: 200 }} src="/images/logo_one_two_lines.svg" alt="La Carto'Nomades" />
                                 </Link>
 
                             </div>

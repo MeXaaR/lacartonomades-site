@@ -1191,12 +1191,12 @@ section.parallax a:hover {
 }
 
 .wave-one {
-	background-image:url('../images/bg-wave/wave-1.png');
+	background-image:url('/assets/images/bg-wave/wave-1.png');
     background-size:50% 100px;
 }
 
 .wave-two {
-	background-image:url('../images/bg-wave/wave-2.png');
+	background-image:url('/assets/images/bg-wave/wave-2.png');
     background-size:50% 120px;
 }
 
@@ -1207,7 +1207,7 @@ section.parallax a:hover {
 }
 
 .wave-three {
-	background-image:url('../images/bg-wave/wave-3.png');
+	background-image:url('/assets/images/bg-wave/wave-3.png');
     background-size:50% 100px;
 }
 
@@ -3218,7 +3218,7 @@ header + .recent-post {
   	margin-left:40px;
   	background-repeat:no-repeat;
   	background-size:32px 64px;
-  	background-image:url("../images/map-controller.svg");
+  	background-image:url("/assets/images/map-controller.svg");
   	-webkit-transition:all 0.5s ease;
   	   -moz-transition:all 0.5s ease;
   			transition:all 0.5s ease;
