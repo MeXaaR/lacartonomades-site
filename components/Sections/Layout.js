@@ -20,9 +20,6 @@ const Layout = (props) => {
 	// Google web font
 	addStyleSheet("https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700");
 
-	// Color schema
-	addStyleSheet(props.colorSchema);
-
 	return (
 		<div>
 

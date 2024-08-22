@@ -27,7 +27,6 @@ const BlogPost = () => {
 
     <Layout
       pageTitle="La Carto'Nomades | Mention Légales"
-      colorSchema="/assets/colors/blue.css"
     >
       <Header />
       <PageTitle tag="Un p'tit coup de pouce ?" title="Nous aider à maintenir l'appli" subtitle="Mais c'est pas obligé hein!" />

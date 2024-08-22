@@ -27,7 +27,6 @@ const BlogPost = () => {
 
     <Layout
       pageTitle="La Carto'Nomades | Politique de confidentialité"
-      colorSchema="/assets/colors/blue.css"
     >
       <Header />
       <PageTitle title="Politique de confidentialité" subtitle="Chut, c'est confidentiel" />

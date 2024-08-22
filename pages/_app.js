@@ -15,6 +15,7 @@ import '/public/assets/library/linea/basic/styles.css';
 import '/public/assets/library/linea/ecommerce/styles.css';
 import '/public/assets/library/linea/software/styles.css';
 import '/public/assets/library/linea/weather/styles.css';
+import '/public/assets/colors/blue.css'
 
 // Animate
 import '/public/assets/library/animate/animate.css';

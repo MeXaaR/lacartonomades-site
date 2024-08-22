@@ -41,25 +41,24 @@ query HomePage {
 }`
 
 const Index = () => {
-    const { data = {} } = useQuery(GET_HOME_PAGE)
-    return (
+  const { data = {} } = useQuery(GET_HOME_PAGE)
+  return (
 
-        <Layout
-            pageTitle="La Carto'Nomades | L'application privée pour les nomades"
-            colorSchema="/assets/colors/blue.css"
-        >
-            <Header nav="home" />
-            <SingleImage data={data?.homePage?.data} />
-            <Clients className="section-box bg-grey" />
-            <Features homeData={data?.homePage?.data} />
-            <Counters />
-            <Team data={data?.homePage?.data} />
-            <Support />
-            <Footer />
-            <ToTop />
-        </Layout>
+    <Layout
+      pageTitle="La Carto'Nomades | L'application privée pour les nomades"
+    >
+      <Header nav="home" />
+      <SingleImage data={data?.homePage?.data} />
+      <Clients className="section-box bg-grey" />
+      <Features homeData={data?.homePage?.data} />
+      <Counters />
+      <Team data={data?.homePage?.data} />
+      <Support />
+      <Footer />
+      <ToTop />
+    </Layout>
 
-    )
+  )
 }
 
 export default Index;

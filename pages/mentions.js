@@ -27,7 +27,6 @@ const BlogPost = () => {
 
     <Layout
       pageTitle="La Carto'Nomades | Mention Légales"
-      colorSchema="/assets/colors/blue.css"
     >
       <Header />
       <PageTitle title="Mentions Légales" />

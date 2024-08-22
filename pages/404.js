@@ -6,7 +6,6 @@ const Custom404 = () => (
 
     <Layout
         pageTitle="La Carto'Nomades - Ooops..."
-        colorSchema="/assets/colors/blue.css"
     >
         <ErrorPage />
         <ToTop />
