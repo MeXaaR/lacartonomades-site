@@ -32,6 +32,11 @@ const Team = ({ data = {} }) => {
 							<div className="team-details">
 								<h5 className="title"><a href="/worker">Marie-Aure</a></h5>
 								<span className="position">{data?.attributes?.marie_description}</span>
+								<div className="button-store team wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
+									<a href="https://marie-aure.com" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
+										<i className="fa fa-camera"></i><p>Aller sur mon site</p>
+									</a>
+								</div>
 							</div>
 						</div>
 					</Col>
@@ -45,6 +50,11 @@ const Team = ({ data = {} }) => {
 							<div className="team-details">
 								<h5 className="title"><a href="/worker">François</a></h5>
 								<span className="position">{data?.attributes?.francois_description}</span>
+								<div className="button-store team wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
+									<a href="https://francoisaubeut.com" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
+										<i className="fa fa-code"></i><p>Aller sur mon site</p>
+									</a>
+								</div>
 							</div>
 						</div>
 					</Col>

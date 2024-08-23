@@ -1116,6 +1116,35 @@ section.parallax a:hover {
 	background-color:#fff;
 }
 
+.button-store.team .custom-btn {
+    border-color:#3e9f74;
+	background-color:#3e9f74;
+		border-width: 1px;
+}
+
+.button-store.team .custom-btn:hover {
+    border-color:#3e9f74 !important;
+	border-width: 1px;
+	background-color:#fff;
+}
+.button-store.team *:hover {
+	color:#fff;
+}
+
+.button-store.team * {
+	color:#3e9f74;
+}
+
+.button-store.team{
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.button-store.team .custom-btn{
+	margin: 0px !important;
+}
+
 /* Banner image */
 .banner-image {
 	max-height: 200px;
