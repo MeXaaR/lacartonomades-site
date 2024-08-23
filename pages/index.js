@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 
 import SingleImage from "../components/Intro/SingleImage";
@@ -10,7 +11,8 @@ import Team from "../components/Sections/Team";
 import Support from "../components/Sections/Support";
 import Footer from "../components/Sections/Footer";
 import ToTop from "../components/Sections/ToTop";
-import { gql, useQuery } from "@apollo/client";
+import { gql } from "@apollo/client";
+import { useQuery } from "../components/client";
 
 const GET_HOME_PAGE = gql`
 query HomePage {
@@ -41,11 +43,12 @@ query HomePage {
 }`
 
 const Index = () => {
-  const { data = {} } = useQuery(GET_HOME_PAGE)
+  const query = useQuery(GET_HOME_PAGE)
+  const { data = {} } = query
   return (
 
     <Layout
-      pageTitle="La Carto'Nomades | L'application privée pour les nomades"
+      pageTitle="La Carto'Nomades | L'application pensée par des nomades"
     >
       <Header nav="home" />
       <SingleImage data={data?.homePage?.data} />

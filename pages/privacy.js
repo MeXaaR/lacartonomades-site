@@ -1,3 +1,4 @@
+'use client'
 import Layout from "../components/Sections/Layout";
 import Header from "../components/Sections/Header";
 import Footer from "../components/Sections/Footer";
@@ -5,7 +6,8 @@ import ToTop from "../components/Sections/ToTop";
 import PageTitle from "../components/BlogPost/PageTitle";
 import BlogContainer from "../components/BlogPost/BlogContainer";
 import BlogDetails from "../components/BlogPost/BlogDetails";
-import { gql, useQuery } from "@apollo/client";
+import { gql } from "@apollo/client";
+import { useQuery } from "../components/client";
 
 const GET_PRIVACY = gql`
 query PrivacyPage {

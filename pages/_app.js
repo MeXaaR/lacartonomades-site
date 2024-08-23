@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import dynamic from 'next/dynamic';
 import SimpleReactLightbox from 'simple-react-lightbox';
 
 // Bootstrap
@@ -23,17 +22,12 @@ import '/public/assets/library/animate/animate.css';
 // Stylesheet
 import '/public/assets/css/style.css';
 import '/public/assets/css/media.css';
-import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import Loader from '../components/Sections/Loader';
 
-const client = new ApolloClient({
-    uri: process.env.API_URL,
-    cache: new InMemoryCache(),
-});
 
 // This default export is required in a new `pages/_app.js` file.
 export default function MyApp({ Component, pageProps }) {
     const router = useRouter();
-
     const [loading, setLoading] = useState(false);
 
     // Loading
@@ -134,10 +128,9 @@ export default function MyApp({ Component, pageProps }) {
     });
 
     return (
-        <ApolloProvider client={client}>
-            <SimpleReactLightbox>
-                <Component {...pageProps} />
-            </SimpleReactLightbox>
-        </ApolloProvider>
+        <SimpleReactLightbox>
+            <Loader />
+            <Component {...pageProps} />
+        </SimpleReactLightbox>
     );
 }

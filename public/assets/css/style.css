@@ -46,6 +46,7 @@ Profile:	https://themeforest.net/user/athenastudio
 	box-sizing:border-box;
 }
 
+
 html {
 	font-family:"Roboto", sans-serif;
 	line-height:1.15;
@@ -204,6 +205,7 @@ a {
 	-webkit-text-decoration-skip:objects;
 	text-decoration:none;
 	transition:all 0.3s;
+	cursor: pointer;
 }
 
 a:hover {

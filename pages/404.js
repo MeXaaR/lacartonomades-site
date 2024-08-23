@@ -1,6 +1,7 @@
 import Layout from "../components/Sections/Layout";
 import ErrorPage from "../components/404/ErrorPage";
 import ToTop from "../components/Sections/ToTop";
+import Loader from "../components/Sections/Loader";
 
 const Custom404 = () => (
 
@@ -9,7 +10,7 @@ const Custom404 = () => (
     >
         <ErrorPage />
         <ToTop />
-
+        <Loader />
     </Layout>
 
 )

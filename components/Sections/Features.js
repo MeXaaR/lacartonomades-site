@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { gql, useQuery } from '@apollo/client';
+import { gql } from '@apollo/client';
 
 import { Container, Row, Col } from 'react-bootstrap';
+import { useQuery } from "../client";
 
 const GET_FEATURES = gql`
 query GetFeatures {

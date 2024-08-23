@@ -1,6 +1,7 @@
-import { gql, useQuery } from '@apollo/client';
+import { gql } from '@apollo/client';
 import React from 'react';
 import { Container, Row, Col, Accordion } from 'react-bootstrap';
+import { useQuery } from '../client';
 
 const GET_FAQ = gql`
 query Faqs {
