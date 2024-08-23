@@ -38,11 +38,11 @@ const SingleImage = ({ data = {} }) => {
 
 							<div className="button-store wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
 
-								<a href={PLAYSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
+								<a target="_blank" href={PLAYSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
 									<i className="fab fa-google-play"></i><p>Disponible sur<span>Google Play</span></p>
 								</a>
 
-								<a href={APPSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0">
+								<a target="_blank" href={APPSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0">
 									<i className="fab fa-apple"></i><p>Et aussi sur<span>App Store</span></p>
 								</a>
 

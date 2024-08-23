@@ -60,8 +60,8 @@ export default class Footer extends Component {
 									<h6>Télécharger</h6>
 
 									<div className="button-store">
-										<a href={PLAYSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 mb-sm-3"><i className="fab fa-google-play"></i><p>Disponible sur<span>Google Play</span></p></a>
-										<a href={APPSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0"><i className="fab fa-apple"></i><p>Et aussi sur<span>App Store</span></p></a>
+										<a target="_blank" href={PLAYSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 mb-sm-3"><i className="fab fa-google-play"></i><p>Disponible sur<span>Google Play</span></p></a>
+										<a target="_blank" href={APPSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0"><i className="fab fa-apple"></i><p>Et aussi sur<span>App Store</span></p></a>
 									</div>
 
 								</div>
