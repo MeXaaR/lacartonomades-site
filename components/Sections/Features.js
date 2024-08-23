@@ -57,14 +57,14 @@ const Features = ({ homeData }) => {
 								<li key={Math.random()}>
 									<div className="feature-box d-flex">
 
-										{/* <!-- Box icon --> */}
-										<div className="box-icon">
-											{feature.attributes.icon && <img src={feature.attributes.icon.data.attributes.url} alt="" />}
-										</div>
-
 										{/* <!-- Box Text --> */}
 										<div className="box-text align-self-center align-self-md-start">
-											<h4>{feature.attributes.title}</h4>
+											<h4 className="d-flex">
+												<div className="box-icon">
+													{feature.attributes.icon && <img src={feature.attributes.icon.data.attributes.url} alt="" />}
+												</div>
+												<span>{feature.attributes.title}</span>
+											</h4>
 											<p>{feature.attributes.description}</p>
 										</div>
 
@@ -89,15 +89,14 @@ const Features = ({ homeData }) => {
 							{features?.data?.features?.data.filter((f) => !f.attributes.left).map((feature, index) => (
 								<li key={Math.random()}>
 									<div className="feature-box d-flex">
-
-										{/* <!-- Box icon --> */}
-										<div className="box-icon">
-											{feature.attributes.icon && <img src={feature.attributes.icon.data.attributes.url} alt="" />}
-										</div>
-
 										{/* <!-- Box Text --> */}
 										<div className="box-text align-self-center align-self-md-start">
-											<h4>{feature.attributes.title}</h4>
+											<h4 className="d-flex">
+												<div className="box-icon">
+													{feature.attributes.icon && <img src={feature.attributes.icon.data.attributes.url} alt="" />}
+												</div>
+												<span>{feature.attributes.title}</span>
+											</h4>
 											<p>{feature.attributes.description}</p>
 										</div>
 

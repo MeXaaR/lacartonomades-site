@@ -1355,6 +1355,8 @@ section.parallax a:hover {
 .feature-box .box-text > h4 {
 	margin-bottom:15px;
     transition:all 0.3s;
+	display: flex;
+	align-items: center;
 }
 
 /* Icon */
@@ -1362,7 +1364,7 @@ section.parallax a:hover {
 	margin-right:20px;
 }
 
-.feature-box .box-icon .icon {
+.feature-box .box-icon img {
 	width:40px;
 	font-size:40px;
 	line-height:40px;
