@@ -6,6 +6,11 @@ const Counters = () => {
     const [places, setPlaces] = useState(0);
     const [users, setUsers] = useState(0);
 
+    const startDate = new Date('2021-01-05');
+    const currentDate = new Date();
+    const timeDifference = Math.abs(currentDate - startDate);
+    const daysDifference = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+
     const [counter, setCounter] = useState(false);
 
     useEffect(() => {
@@ -50,7 +55,7 @@ const Counters = () => {
                 <Row>
 
                     {/* <!-- Counter 1 --> */}
-                    <Col className="col-12 col-md-6 col-lg-4">
+                    <Col className="col-12 col-md-6 col-lg-3">
                         <div className="counter wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0">
                             <div className="icon icon-basic-geolocalize-01"></div>
                             <div className="counter-content res-margin">
@@ -75,7 +80,7 @@ const Counters = () => {
                     </Col>
 
                     {/* <!-- Counter 2 --> */}
-                    <Col className="col-12 col-md-6 col-lg-4">
+                    <Col className="col-12 col-md-6 col-lg-3">
                         <div className="counter wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.3s">
                             <div className="icon icon-basic-heart"></div>
                             <div className="counter-content res-margin">
@@ -94,13 +99,13 @@ const Counters = () => {
                                     }}
                                 </CountUp>
 
-                                <p>Utilisateurs</p>
+                                <p>Utilisateurs sur la version 2</p>
                             </div>
                         </div>
                     </Col>
 
                     {/* <!-- Counter 3 --> */}
-                    <Col className="col-12 col-md-6 col-lg-4">
+                    <Col className="col-12 col-md-6 col-lg-3">
                         <div className="counter wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
                             <div className="icon icon-basic-spread-text"></div>
                             <div className="counter-content res-margin">
@@ -119,7 +124,32 @@ const Counters = () => {
                                     }}
                                 </CountUp>
 
-                                <p>Lignes de codes</p>
+                                <p>Lignes de code</p>
+                            </div>
+                        </div>
+                    </Col>
+
+                    {/* <!-- Counter 3 --> */}
+                    <Col className="col-12 col-md-6 col-lg-3">
+                        <div className="counter wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
+                            <div className="icon icon-basic-spread-text"></div>
+                            <div className="counter-content res-margin">
+
+                                <CountUp start={0} end={daysDifference} delay={0} duration={2}>
+                                    {({ countUpRef, start }) => {
+                                        if (counter) {
+                                            start();
+                                        }
+
+                                        return (
+                                            <h5>
+                                                <span ref={countUpRef} className="number-count">0</span>
+                                            </h5>
+                                        );
+                                    }}
+                                </CountUp>
+
+                                <p>Jours d'existence</p>
                             </div>
                         </div>
                     </Col>

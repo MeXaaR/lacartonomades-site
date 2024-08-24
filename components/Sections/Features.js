@@ -41,7 +41,7 @@ const Features = ({ homeData }) => {
 
 						<div className="section-title text-center">
 							<h3>{homeData?.attributes?.features_title}</h3>
-							<p>{homeData?.attributes?.features_description}</p>
+							<p>{homeData?.attributes?.features_introduction}</p>
 						</div>
 
 					</Col>

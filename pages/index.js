@@ -21,6 +21,8 @@ query HomePage {
       attributes {
         title
         introduction
+        features_title
+        features_introduction
         marie_description
         marie_photo {
           data {
