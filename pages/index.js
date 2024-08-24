@@ -24,21 +24,14 @@ query HomePage {
         features_title
         features_introduction
         marie_description
-        marie_photo {
-          data {
-            attributes {
-              url
-            }
-          }
-        }
         francois_description
-        francois_photo {
+        team_photo {
           data {
             attributes {
               url
             }
           }
-        }
+          }
       }
     }
   }

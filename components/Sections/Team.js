@@ -22,6 +22,34 @@ const Team = ({ data = {} }) => {
 
 				<Row className="justify-content-center">
 
+					<Col className="col-12 col-md-6 col-lg-6">
+						<div className="team-member res-margin">
+							<div className="team-image">
+								<img src={data?.attributes?.team_photo?.data?.attributes?.url} alt="" />
+							</div>
+						</div>
+					</Col>
+				</Row>
+
+				<Row className="justify-content-center">
+					{/* <!-- Member 1 --> */}
+					<Col className="col-12 col-md-6 col-lg-3">
+						<div className="team-member res-margin">
+							<div className="team-image">
+								<img src={data?.attributes?.francois_photo?.data?.attributes?.url} alt="" />
+							</div>
+							<div className="team-details">
+								<h5 className="title"><a href="/worker">François</a></h5>
+								<span className="position">{data?.attributes?.francois_description}</span>
+								<div className="button-store team wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
+									<a target="_blank" href="https://francoisaubeut.com" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
+										<i className="fa fa-code"></i><p>Aller sur mon site</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</Col>
+
 					{/* <!-- Member 2 --> */}
 					<Col className="col-12 col-md-6 col-lg-3">
 						<div className="team-member res-margin">
@@ -33,13 +61,14 @@ const Team = ({ data = {} }) => {
 								<h5 className="title"><a href="/worker">Marie-Aure</a></h5>
 								<span className="position">{data?.attributes?.marie_description}</span>
 								<div className="button-store team wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
-									<a href="https://marie-aure.com" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
+									<a target="_blank" href="https://marie-aure.com" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
 										<i className="fa fa-camera"></i><p>Aller sur mon site</p>
 									</a>
 								</div>
 							</div>
 						</div>
 					</Col>
+
 
 					{/* <!-- Member 3 --> */}
 					<Col className="col-12 col-md-6 col-lg-3">
@@ -48,11 +77,11 @@ const Team = ({ data = {} }) => {
 								<img src={data?.attributes?.francois_photo?.data?.attributes?.url} alt="" />
 							</div>
 							<div className="team-details">
-								<h5 className="title"><a href="/worker">François</a></h5>
-								<span className="position">{data?.attributes?.francois_description}</span>
+								<h5 className="title"><a href="/worker">Fremen</a></h5>
+								<span className="position">Chien qui a sacrifé des heures de balades pour La Carto'Nomades</span>
 								<div className="button-store team wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
-									<a href="https://francoisaubeut.com" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
-										<i className="fa fa-code"></i><p>Aller sur mon site</p>
+									<a target="_blank" href="https://www.la-spa.fr/" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
+										<i className="fa fa-dog"></i><p>Moi j'ai pas d'site</p>
 									</a>
 								</div>
 							</div>
