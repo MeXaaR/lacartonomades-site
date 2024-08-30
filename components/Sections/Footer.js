@@ -29,7 +29,7 @@ export default class Footer extends Component {
 										<img style={{ width: 200 }} src="/images/logo_one_two_lines_white.svg" alt="Lacartonomades" data-rjs="2" />
 									</p>
 									<p>
-										Merci dêtre ici, et d'utiliser l'application. Ça nous touche beaucoup de voir que notre travail est utile.
+										Merci d'être ici, et d'utiliser l'application. Ça nous touche beaucoup de voir que notre travail est utile.
 									</p>
 								</div>
 							</Col>

@@ -15,6 +15,13 @@
 	.banner-text h1 {
 		font-size:36px;
 	}
+	.banner {
+		min-height: 1300px;
+	}
+	.banner-image {
+		min-height:130px;
+	}
+	
 	
 	/* Sections */
 	section .container,
@@ -71,6 +78,12 @@
 	/* Margin */
 	.res-margin {
 		margin-bottom:30px;
+	}
+	.banner {
+		min-height: 1300px;
+	}
+	.banner-image {
+		min-height:130px;
 	}
 	
 	footer .res-margin {

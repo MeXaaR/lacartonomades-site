@@ -59,13 +59,13 @@ const Features = ({ homeData }) => {
 
 										{/* <!-- Box Text --> */}
 										<div className="box-text align-self-center align-self-md-start">
-											<h4 className="d-flex">
+											<h5 style={{ alignItems: "center" }} className="d-flex">
 												<div className="box-icon">
 													{feature.attributes.icon && <img src={feature.attributes.icon.data.attributes.url} alt="" />}
 												</div>
 												<span>{feature.attributes.title}</span>
-											</h4>
-											<p>{feature.attributes.description}</p>
+											</h5>
+											<p style={{ textAlign: "justify" }}>{feature.attributes.description}</p>
 										</div>
 
 									</div>
@@ -91,12 +91,12 @@ const Features = ({ homeData }) => {
 									<div className="feature-box d-flex">
 										{/* <!-- Box Text --> */}
 										<div className="box-text align-self-center align-self-md-start">
-											<h4 className="d-flex">
+											<h5 style={{ alignItems: "center" }} className="d-flex">
 												<div className="box-icon">
 													{feature.attributes.icon && <img src={feature.attributes.icon.data.attributes.url} alt="" />}
 												</div>
 												<span>{feature.attributes.title}</span>
-											</h4>
+											</h5>
 											<p>{feature.attributes.description}</p>
 										</div>
 
@@ -104,6 +104,13 @@ const Features = ({ homeData }) => {
 								</li>
 							))}
 						</ul>
+					</Col>
+
+					{/* <!-- Center --> */}
+					<Col className="col-12 d-lg-none">
+						<div className="features-thumb text-center">
+							<img style={{ width: "70%" }} src="/images/features/awesome-features.png" alt="" />
+						</div>
 					</Col>
 
 				</Row>

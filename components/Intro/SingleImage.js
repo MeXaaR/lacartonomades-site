@@ -31,7 +31,8 @@ const SingleImage = ({ data = {} }) => {
 							</h1>
 
 							<p className="wow fadeInUp" style={{
-								whiteSpace: 'pre-line'
+								whiteSpace: 'pre-line',
+								textAlign: 'justify'
 							}} data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.3s">
 								{data.attributes?.introduction}
 							</p>
@@ -56,7 +57,7 @@ const SingleImage = ({ data = {} }) => {
 					<Col className="col-12 col-lg-6">
 
 						<div className="banner-image wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.3s">
-							<img className="bounce-effect" src="images/banner/single-welcome.png" alt="" />
+							<img src="images/banner/single-welcome.png" alt="" />
 						</div>
 
 					</Col>

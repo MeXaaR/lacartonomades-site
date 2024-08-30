@@ -44,7 +44,6 @@ export const useQuery = (query, options) => {
 
     const handleTriggerQuery = async () => {
         const res = await client.query({ query: query, ...options });
-        console.log(res)
         setResult(res);
     }
 

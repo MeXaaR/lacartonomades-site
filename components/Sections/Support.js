@@ -27,7 +27,6 @@ const Support = (props) => {
 				{/* <!-- Section title --> */}
 				<Row className="justify-content-center">
 					<Col className="col-12 col-md-10 col-lg-6">
-
 						<div className="section-title text-center">
 							<h3>Les questions fréquentes</h3>
 							<p>Voici une petite explication supplémentaire du fonctionnement de la Carto'Nomades.</p>
@@ -37,25 +36,18 @@ const Support = (props) => {
 				</Row>
 
 				<Row>
-					<Col className="col-12 col-lg-10 offset-lg-1">
+					{faqs?.data?.faqs?.data.map((faq, index) => (
+						<Col className="col-12 col-lg-10 offset-lg-1" key={index}>
+							<h5>
+								{faq.attributes.question}
+							</h5>
+							<p style={{ textAlign: 'justify' }}>
+								{faq.attributes.answer}
+							</p>
+						</Col>
 
-						{/* <!-- FAQ accordion --> */}
-						<Accordion defaultActiveKey="0" flush>
-							{faqs?.data?.faqs?.data.map((faq, index) => (
-								<Accordion.Item eventKey={index} key={index}>
-									<Accordion.Header as="h5">
-										{faq.attributes.question}
-									</Accordion.Header>
-									<Accordion.Body>
-										<p>
-											{faq.attributes.answer}
-										</p>
-									</Accordion.Body>
-								</Accordion.Item>
-							))}
-						</Accordion>
+					))}
 
-					</Col>
 				</Row>
 
 				<div className="empty-30"></div>
