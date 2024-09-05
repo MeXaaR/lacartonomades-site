@@ -7,9 +7,8 @@ import 'swiper/css/autoplay';
 
 const categories = [
     "SPOTS_NATURE.png",
-    "SPOTS_PARKING.png",
+    "SPOTS_LANDSCAPED.png",
     "SPOTS_PRIVATE_LAND.png",
-    "SPOTS_REST_AERA.png",
     "UTILS_COMPOST.png",
     "UTILS_GARAGE.png",
     "UTILS_OIL.png",
@@ -18,6 +17,7 @@ const categories = [
     "UTILS_WAREHOUSE.png",
     "UTILS_WATER.png",
     "UTILS_WOOD_DUST.png",
+    "PLUS_MARKER.png",
 ]
 
 const Clients = (props) => {
