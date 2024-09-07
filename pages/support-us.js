@@ -8,6 +8,8 @@ import Footer from "../components/Sections/Footer";
 import ToTop from "../components/Sections/ToTop";
 import { gql } from "@apollo/client";
 import { useQuery } from "../components/client";
+import Brocoli from "../components/Brocoli";
+import { Col } from "react-bootstrap";
 
 const GET_SUPPORT = gql`
 query SupportPage {
@@ -35,8 +37,8 @@ const BlogPost = () => {
 
       <BlogContainer>
         <BlogDetails content={support?.data?.supportUsPage.data?.attributes?.Content} />
+        <Brocoli />
       </BlogContainer>
-
       <Footer />
       <ToTop />
     </Layout>

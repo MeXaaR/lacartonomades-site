@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Markdown from 'react-markdown'
+import Brocoli from '../Brocoli';
 
 const BlogDetails = ({ content }) => {
     return (
@@ -13,16 +14,6 @@ const BlogDetails = ({ content }) => {
                     <Markdown>{content}</Markdown>
                 </Col>
             </article>
-
-            {/* <!-- Prev/Next posts --> */}
-            <div className="post-navigation-wrapper">
-
-                <Row className="divider">
-                    <Col className="col-12">
-                    </Col>
-                </Row>
-
-            </div>
 
         </Col>
     );

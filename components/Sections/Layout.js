@@ -32,7 +32,6 @@ const Layout = (props) => {
 				<meta name="robots" content="noindex,nofollow" />
 				<meta rel="stylesheet" content="/css/styles.css" />
 
-
 				/* Title */
 				<title>{props.pageTitle}</title>
 
