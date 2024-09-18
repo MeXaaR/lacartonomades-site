@@ -1,33 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { gql } from '@apollo/client';
+import React from "react";
 
 import { Container, Row, Col } from 'react-bootstrap';
-import { useQuery } from "../client";
-
-const GET_FEATURES = gql`
-query GetFeatures {
-  features {
-    data {
-      attributes {
-        title
-        description
-        left
-        icon {
-          data {
-            attributes {
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-}`
-
-
+import features from "../../data/features.json";
 
 const Features = ({ homeData }) => {
-	const features = useQuery(GET_FEATURES)
 
 	return (
 		<section id="features">
@@ -40,8 +16,8 @@ const Features = ({ homeData }) => {
 					<Col className="col-12 col-md-10 col-lg-6">
 
 						<div className="section-title text-center">
-							<h3>{homeData?.attributes?.features_title}</h3>
-							<p>{homeData?.attributes?.features_introduction}</p>
+							<h3>{homeData?.features_title}</h3>
+							<p>{homeData?.features_introduction}</p>
 						</div>
 
 					</Col>
@@ -53,7 +29,7 @@ const Features = ({ homeData }) => {
 					<Col className="col-12 col-md-6 col-lg-4">
 
 						<ul className="features-item">
-							{features?.data?.features?.data.filter((f) => f.attributes.left).map((feature, index) => (
+							{features.filter((f) => f.left).map((feature, index) => (
 								<li key={Math.random()}>
 									<div className="feature-box d-flex">
 
@@ -61,11 +37,11 @@ const Features = ({ homeData }) => {
 										<div className="box-text align-self-center align-self-md-start">
 											<h5 style={{ alignItems: "center" }} className="d-flex">
 												<div className="box-icon">
-													{feature.attributes.icon && <img src={feature.attributes.icon.data.attributes.url} alt="" />}
+													{feature.icon && <img src={feature.icon} alt="" />}
 												</div>
-												<span>{feature.attributes.title}</span>
+												<span>{feature.title}</span>
 											</h5>
-											<p style={{ textAlign: "justify" }}>{feature.attributes.description}</p>
+											<p style={{ textAlign: "justify" }}>{feature.description}</p>
 										</div>
 
 									</div>
@@ -86,18 +62,18 @@ const Features = ({ homeData }) => {
 
 						<ul className="features-item">
 
-							{features?.data?.features?.data.filter((f) => !f.attributes.left).map((feature, index) => (
+							{features.filter((f) => !f.left).map((feature, index) => (
 								<li key={Math.random()}>
 									<div className="feature-box d-flex">
 										{/* <!-- Box Text --> */}
 										<div className="box-text align-self-center align-self-md-start">
 											<h5 style={{ alignItems: "center" }} className="d-flex">
 												<div className="box-icon">
-													{feature.attributes.icon && <img src={feature.attributes.icon.data.attributes.url} alt="" />}
+													{feature.icon && <img src={feature.icon} alt="" />}
 												</div>
-												<span>{feature.attributes.title}</span>
+												<span>{feature.title}</span>
 											</h5>
-											<p>{feature.attributes.description}</p>
+											<p>{feature.description}</p>
 										</div>
 
 									</div>

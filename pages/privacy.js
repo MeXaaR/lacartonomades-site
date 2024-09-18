@@ -6,24 +6,9 @@ import ToTop from "../components/Sections/ToTop";
 import PageTitle from "../components/BlogPost/PageTitle";
 import BlogContainer from "../components/BlogPost/BlogContainer";
 import BlogDetails from "../components/BlogPost/BlogDetails";
-import { gql } from "@apollo/client";
-import { useQuery } from "../components/client";
-
-const GET_PRIVACY = gql`
-query PrivacyPage {
-  privacyPage {
-    data {
-      attributes {
-        Content
-      }
-    }
-  }
-}`
-
+import { privacy } from "../data/privacy";
 
 const BlogPost = () => {
-
-  const privacy = useQuery(GET_PRIVACY)
 
   return (
 
@@ -34,7 +19,7 @@ const BlogPost = () => {
       <PageTitle title="Politique de confidentialité" subtitle="Chut, c'est confidentiel" />
 
       <BlogContainer>
-        <BlogDetails content={privacy?.data?.privacyPage.data?.attributes?.Content} />
+        <BlogDetails content={privacy} />
       </BlogContainer>
 
       <Footer />

@@ -25,7 +25,7 @@ const Team = ({ data = {} }) => {
 					<Col className="col-12 col-md-6 col-lg-6">
 						<div className="team-member res-margin">
 							<div className="team-image">
-								<img src={data?.attributes?.team_photo?.data?.attributes?.url} alt="" />
+								<img src={data?.team_photo} alt="" />
 							</div>
 						</div>
 					</Col>
@@ -35,12 +35,9 @@ const Team = ({ data = {} }) => {
 					{/* <!-- Member 1 --> */}
 					<Col className="col-12 col-md-6 col-lg-3">
 						<div className="team-member res-margin">
-							<div className="team-image">
-								<img src={data?.attributes?.francois_photo?.data?.attributes?.url} alt="" />
-							</div>
 							<div className="team-details">
 								<h5 className="title"><a href="/worker">François</a></h5>
-								<span className="position">{data?.attributes?.francois_description}</span>
+								<span className="position">{data?.francois_description}</span>
 								<div className="button-store team wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
 									<a target="_blank" href="https://francoisaubeut.com" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
 										<i className="fa fa-code"></i><p>Aller sur mon site</p>
@@ -53,13 +50,9 @@ const Team = ({ data = {} }) => {
 					{/* <!-- Member 2 --> */}
 					<Col className="col-12 col-md-6 col-lg-3">
 						<div className="team-member res-margin">
-							<div className="team-image">
-								<img src={data?.attributes?.marie_photo?.data?.attributes?.url} alt="" />
-
-							</div>
 							<div className="team-details">
 								<h5 className="title"><a href="/worker">Marie-Aure</a></h5>
-								<span className="position">{data?.attributes?.marie_description}</span>
+								<span className="position">{data?.marie_description}</span>
 								<div className="button-store team wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">
 									<a target="_blank" href="https://marie-aure.com" className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 me-sm-3">
 										<i className="fa fa-camera"></i><p>Aller sur mon site</p>
@@ -73,9 +66,6 @@ const Team = ({ data = {} }) => {
 					{/* <!-- Member 3 --> */}
 					<Col className="col-12 col-md-6 col-lg-3">
 						<div className="team-member res-margin">
-							<div className="team-image">
-								<img src={data?.attributes?.francois_photo?.data?.attributes?.url} alt="" />
-							</div>
 							<div className="team-details">
 								<h5 className="title"><a href="/worker">Fremen</a></h5>
 								<span className="position">Chien qui a sacrifé des heures de balades pour La Carto'Nomades</span>

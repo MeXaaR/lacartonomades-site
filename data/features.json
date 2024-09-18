@@ -1,0 +1,44 @@
+[
+    {
+        "id": 4,
+        "title": "Carte collaborative",
+        "description": "La Carto’Nomades n’est pas seulement une liste de lieux, c’est surtout une carte collaborative. Sans toi, sans tes connaissances, il n’y a pas de carte. C’est à chacun d’inscrire les lieux qui lui semblent appropriés.",
+        "left": true,
+        "icon": "/images/features/collaborative.png"
+    },
+    {
+        "id": 1,
+        "title": "100% Hors ligne",
+        "description": "Ton téléphone stocke tous les lieux, tu ne dépends plus d'internet pour voir ce qu'il y a autour de toi. L'appli se met à jour à chaque fois que tu l'ouvres. C'est plus rapide et plus agréable.",
+        "left": true,
+        "icon": "/images/features/offline.png"
+    },
+    {
+        "id": 3,
+        "title": "Dis où tu crèches",
+        "description": "Montre à la communauté où tu es et peut-être que d'autres nomades te rejoindront pour discuter et boire un thé.",
+        "left": false,
+        "icon": "/images/features/position.png"
+    },
+    {
+        "id": 5,
+        "title": "Filtre ce que tu vois",
+        "description": "Il peut y avoir beaucoup de lieux, beaucoup de choses différentes autour de toi. Tu cherches de l'eau? N'affiche que ça et c'est réglé.",
+        "left": true,
+        "icon": "/images/features/search.png"
+    },
+    {
+        "id": 6,
+        "title": "Petite communauté",
+        "description": "L'appli est cachée et non référencée, ça fait donc de nous une petite communauté qui choisit ses membres. Et on entend bien que ça reste comme ca. Partage ce lien avec un nomade respectueux que tu connais.",
+        "left": false,
+        "icon": "/images/features/community.png"
+    },
+    {
+        "id": 2,
+        "title": "Garde tes préférés",
+        "description": "On a tous des lieux que l'on aime plus que les autres. Retrouve-les facilement en les mettant dans tes favoris.",
+        "left": false,
+        "icon": "/images/features/heart.png"
+    }
+]

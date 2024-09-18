@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
-import { PLAYSTORE_APP, APPSTORE_APP } from '../enums';
+import { PLAYSTORE_APP, APPSTORE_APP } from '../../data/enums';
 export default class Footer extends Component {
 
 	componentDidMount() {

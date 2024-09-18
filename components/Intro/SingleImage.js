@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import BackgroundSlider from 'react-background-slider';
-import { PLAYSTORE_APP, APPSTORE_APP } from '../enums';
+import { PLAYSTORE_APP, APPSTORE_APP } from '../../data/enums';
 
 const SingleImage = ({ data = {} }) => {
 	return (
@@ -27,14 +27,14 @@ const SingleImage = ({ data = {} }) => {
 							<h1 className="wow fadeInUp" style={{
 								whiteSpace: 'pre-line'
 							}} data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0s">
-								{data.attributes?.title}
+								{data?.title}
 							</h1>
 
 							<p className="wow fadeInUp" style={{
 								whiteSpace: 'pre-line',
 								textAlign: 'justify'
 							}} data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.3s">
-								{data.attributes?.introduction}
+								{data?.introduction}
 							</p>
 
 							<div className="button-store wow fadeInUp" data-wow-offset="10" data-wow-duration="1s" data-wow-delay="0.6s">

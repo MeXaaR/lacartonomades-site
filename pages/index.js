@@ -11,46 +11,20 @@ import Team from "../components/Sections/Team";
 import Support from "../components/Sections/Support";
 import Footer from "../components/Sections/Footer";
 import ToTop from "../components/Sections/ToTop";
-import { gql } from "@apollo/client";
-import { useQuery } from "../components/client";
-
-const GET_HOME_PAGE = gql`
-query HomePage {
-  homePage {
-    data {
-      attributes {
-        title
-        introduction
-        features_title
-        features_introduction
-        marie_description
-        francois_description
-        team_photo {
-          data {
-            attributes {
-              url
-            }
-          }
-          }
-      }
-    }
-  }
-}`
+import home_page from "../data/home_page.json";
 
 const Index = () => {
-  const query = useQuery(GET_HOME_PAGE)
-  const { data = {} } = query
   return (
 
     <Layout
       pageTitle="La Carto'Nomades | L'application pensée par des nomades"
     >
       <Header nav="home" />
-      <SingleImage data={data?.homePage?.data} />
+      <SingleImage data={home_page} />
       <Clients className="section-box bg-grey" />
-      <Features homeData={data?.homePage?.data} />
+      <Features homeData={home_page} />
       <Counters />
-      <Team data={data?.homePage?.data} />
+      <Team data={home_page} />
       <Support />
       <Footer />
       <ToTop />

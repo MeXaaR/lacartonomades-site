@@ -1,23 +1,8 @@
-import { gql } from '@apollo/client';
 import React from 'react';
-import { Container, Row, Col, Accordion } from 'react-bootstrap';
-import { useQuery } from '../client';
-
-const GET_FAQ = gql`
-query Faqs {
-  faqs {
-    data {
-      attributes {
-        answer
-        question
-      }
-    }
-  }
-}`
-
+import { Container, Row, Col } from 'react-bootstrap';
+import faqs from '../../data/support.json';
 
 const Support = (props) => {
-	const faqs = useQuery(GET_FAQ)
 	return (
 		<section id="support" className={props.className}>
 
@@ -36,13 +21,13 @@ const Support = (props) => {
 				</Row>
 
 				<Row>
-					{faqs?.data?.faqs?.data.map((faq, index) => (
+					{faqs.map((faq, index) => (
 						<Col className="col-12 col-lg-10 offset-lg-1" key={index}>
 							<h5>
-								{faq.attributes.question}
+								{faq.question}
 							</h5>
 							<p style={{ textAlign: 'justify' }}>
-								{faq.attributes.answer}
+								{faq.answer}
 							</p>
 						</Col>
 

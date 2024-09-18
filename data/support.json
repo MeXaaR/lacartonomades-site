@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "question": "J'avais un compte sur l'ancienne version, comment je fais ?",
+        "answer": "On a honnêtement hésité à les remettre mais on vu que peu de gens avaient des favoris ou un avatar, parce que sans interêt dans la version précédente. Mais on a pris la décision de repartir à zéro, sauf pour les lieux, que cela serait beaucoup simple pour tout le monde."
+    },
+    {
+        "id": 2,
+        "question": "J'ai créé un lieu privé uniquement visible par moi dans la version 1, que devient-il ?",
+        "answer": "Comme nous avons supprimé la possibilité d'avoir des lieux réservés à soi, ils ont été supprimés de la base de données pour éviter qu'ils soient divulgués à tous. Il n'y a plus de lieux invisibles sur la version 2, on s'est dit que cela n'allait pas dans le sens de l'application de partage. Si tu souhaites préserver un lieu, garde-le protégé en ne le référençant nul part."
+    },
+    {
+        "id": 3,
+        "question": "Et la version web, elle arrive quand ?",
+        "answer": "Nous avons fait un choix. Afin de rester dans l'optique de l'application hors ligne, nous avons décidé de ne pas développer de version web.\nAinsi, chacun n'est plus dépendant du serveur, s'il plante, toutes les applications de tout le monde continuent de fonctionner. Le code est également plus facile à gérer s'il n'y a que les applications mobiles."
+    },
+    {
+        "id": 4,
+        "question": "Vous ne revendez pas mes données ?",
+        "answer": "Nous ne revendons pas tes données, on ne les partage pas non plus. On ne les utilise que pour améliorer l'application et pour savoir combien de personnes l'utilisent. Nous avons fait une déclaration RGPD car nous stockons vos emails sur le serveur pour créer les comptes, mais ils ne sont jamais revendus ou partagés."
+    }
+]

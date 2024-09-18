@@ -6,24 +6,9 @@ import BlogContainer from "../components/BlogPost/BlogContainer";
 import BlogDetails from "../components/BlogPost/BlogDetails";
 import Footer from "../components/Sections/Footer";
 import ToTop from "../components/Sections/ToTop";
-import { gql } from "@apollo/client";
-import { useQuery } from "../components/client";
-
-const GET_MENTIONS = gql`
-query MentionsPage {
-  mentionsPage {
-    data {
-      attributes {
-        Content
-      }
-    }
-  }
-}`
-
+import { mentions } from "../data/mentions";
 
 const BlogPost = () => {
-
-  const mentions = useQuery(GET_MENTIONS)
 
   return (
 
@@ -34,7 +19,7 @@ const BlogPost = () => {
       <PageTitle title="Mentions Légales" />
 
       <BlogContainer>
-        <BlogDetails content={mentions?.data?.mentionsPage.data?.attributes?.Content} />
+        <BlogDetails content={mentions} />
       </BlogContainer>
 
       <Footer />
