@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import CountUp from 'react-countup';
+import { supabase } from '../supabase';
 const Counters = () => {
     const parallax = useRef(null);
     const [places, setPlaces] = useState(0);
@@ -30,13 +31,14 @@ const Counters = () => {
     });
 
     const handleFetchData = async () => {
-        const places = await fetch('https://backend.lacartonomades.fr/api/places?pagination%5Bpage%5D=1&pagination%5BpageSize%5D=1&fields=id')
-        const placesData = await places.json()
-        const { total } = placesData.meta.pagination
-        setPlaces(total)
-        const users = await fetch('https://backend.lacartonomades.fr/api/users/count')
-        const usersData = await users.json()
-        setUsers(usersData)
+        const places = await supabase.from('places').select('*', { count: 'exact', head: true })
+
+        console.log("places", places.count)
+        setPlaces(places.count)
+        const users = await supabase.from('profiles').select('*', { count: 'exact', head: true })
+
+        console.log("users", users.count)
+        setUsers(users.count)
     }
 
     useEffect(() => {

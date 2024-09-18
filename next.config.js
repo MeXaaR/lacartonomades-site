@@ -6,6 +6,12 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
+    publicRuntimeConfig: {
+        NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
+        NEXT_PUBLIC_SUPABASE_KEY: process.env.NEXT_PUBLIC_SUPABASE_KEY,
+        NEXT_PUBLIC_APPSTORE_APP: process.env.NEXT_PUBLIC_APPSTORE_APP,
+        NEXT_PUBLIC_PLAYSTORE_APP: process.env.NEXT_PUBLIC_PLAYSTORE_APP,
+    }
 };
 
 module.exports = nextConfig;

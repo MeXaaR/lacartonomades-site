@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import * as config from "../envConfig"
 
-import { PLAYSTORE_APP, APPSTORE_APP } from '../../data/enums';
+const { NEXT_PUBLIC_PLAYSTORE_APP, NEXT_PUBLIC_APPSTORE_APP } = config
 export default class Footer extends Component {
 
 	componentDidMount() {
@@ -60,8 +61,8 @@ export default class Footer extends Component {
 									<h6>Télécharger</h6>
 
 									<div className="button-store">
-										<a target="_blank" href={PLAYSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 mb-sm-3"><i className="fab fa-google-play"></i><p>Disponible sur<span>Google Play</span></p></a>
-										<a target="_blank" href={APPSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0"><i className="fab fa-apple"></i><p>Et aussi sur<span>App Store</span></p></a>
+										<a target="_blank" href={NEXT_PUBLIC_PLAYSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0 mb-sm-3"><i className="fab fa-google-play"></i><p>Disponible sur<span>Google Play</span></p></a>
+										<a target="_blank" href={NEXT_PUBLIC_APPSTORE_APP} className="custom-btn d-inline-flex align-items-center m-2 m-sm-0"><i className="fab fa-apple"></i><p>Et aussi sur<span>App Store</span></p></a>
 									</div>
 
 								</div>
